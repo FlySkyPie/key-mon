@@ -14,3 +14,10 @@ distribution = false
 
 [tool.pdm.scripts]
 start = "python src/key-mon.py"
+build = { composite = [
+    "pyinstaller --onefile src/key-mon.py",
+    "python scripts/post_dist.py ",
+] }
+
+[tool.pdm.dev-dependencies]
+dev = ["pyinstaller>=6.10.0"]
