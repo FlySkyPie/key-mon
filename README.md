@@ -1,0 +1,6 @@
+
+
+
+```shell
+sudo apt install libcairo2-dev pkg-config python3-dev libgirepository1.0-dev
+```

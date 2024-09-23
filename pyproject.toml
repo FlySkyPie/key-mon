@@ -1,0 +1,16 @@
+[project]
+name = "key-mon"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [{ name = "Wei Ji (FlySkyPie)", email = "c445dj544@gmail.com" }]
+dependencies = ["python3-xlib>=0.15", "PyGObject>=3.48.2"]
+requires-python = "==3.8.*"
+readme = "README.md"
+license = { text = "MIT" }
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+start = "python src/key-mon.py"
